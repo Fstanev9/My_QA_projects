@@ -1,0 +1,77 @@
+{
+  "id": "d43c4f3b-4aa4-4bad-a295-97e2ec4b79c1",
+  "version": "2.0",
+  "name": "testTabel",
+  "url": "https://demoqa.com/",
+  "tests": [{
+    "id": "e366177f-9c27-4b10-986c-66f0afe52956",
+    "name": "Untitled",
+    "commands": [{
+      "id": "f224bd78-6dab-4f16-b4cf-4efabc1118f1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcb7004f-4297-4fe4-84b5-6d4f3090fc2d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//*[contains(text(),\"Elements\")])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d909b298-528f-490e-9420-1ae9e65c60da",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//ul[@class='menu-list']//*[contains(text(),\"Web Tables\")]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40a910aa-fa11-4564-86f7-7a2b108160a7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//span[@class='mr-2'])[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "884734e4-b0bc-4147-87b8-66252f5713c7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id=\"firstName\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3f60f75-4159-4c5f-976e-f4032f1b64cf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id=\"firstName\"]",
+      "targets": [],
+      "value": "gosho"
+    }, {
+      "id": "bbb30f94-0340-455c-b418-74389da10358",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8c700c5-0f48-4e64-a546-f7b867b82e63",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[contains(text(),\"gosho\")]",
+      "targets": [],
+      "value": "gosho"
+    }]
+  }],
+  "suites": [{
+    "id": "1a19402a-3eb6-4065-af68-e26c8f7a6e7e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e366177f-9c27-4b10-986c-66f0afe52956"]
+  }],
+  "urls": ["https://demoqa.com/"],
+  "plugins": []
+}
