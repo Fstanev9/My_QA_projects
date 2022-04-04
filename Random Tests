@@ -1,3 +1,20 @@
 Hello there! Here i will uplod some random tests i made by my own just to practice.
 
+Test 1
+I`m going to test https://www.abv.bg/ registration form.
+I will try to create a profile without filling any of the mandatory fields. Here is what i found:)
+
+1. Open URL https://www.abv.bg/
+2. Click on "Регистрация в АБВ" in the top right corner of the page.
+3. User is redirected to registration form.
+4. Scroll to the verry end of the page and click on the green button "създай АБВ профил"
+
+Expected result:
+An inscription must appear against each mandatory field in red colour.
+User is not registered and stay on the same page.
+
+Actual Result:
+There is no inscription against "Пол" and "Дата на раждане". They are marcked as mandatory with " * "
+
+
 
