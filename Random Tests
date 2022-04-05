@@ -17,4 +17,27 @@ Actual Result:
 There is no inscription against "Пол" and "Дата на раждане". They are marcked as mandatory with " * "
 
 
+Test 2
+Today i`m going to try to apply for a job with my CV in AMDARIS for a QA Specialist.
+I`m going to enter the site and find the section with job offers,select the region and upload my CV, than click on "SEND" button
 
+1. Open URL https://amdaris.com
+2. Click on the triple strike in the top right corner.
+3. Choose fromm the drop down menu "CAREERS".
+4. Scroll down to the section "SELECT A LOCATION"
+5. Find the square with sign inside "BULGARIA"
+6. Click on "FIND OUT MORE"
+7. Scroll down, on the left side of the page surch for job title "QA ENGINEER SOFIA" and click on it.
+8. User is redirected to next page
+9. Scroll down to "APPLY ONLINE"
+10. Enter the required information in all fields.
+11. Click on upload CV and upload the required document in the right format.
+12. Click in the check box in case if you agree.
+13. Click on the "SEND" button
+
+Expected result:
+User applied successfully for the position.
+
+Actual result:
+An error message in red shows up below. It says "An error message in red shows up below"
+The user was unable to apply for this position.
