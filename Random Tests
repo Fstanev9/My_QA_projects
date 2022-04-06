@@ -16,6 +16,8 @@ User is not registered and stay on the same page.
 Actual Result:
 There is no inscription against "Пол" and "Дата на раждане". They are marcked as mandatory with " * "
 
+We have a BUG!
+
 
 Test 2
 Today i`m going to try to apply for a job with my CV in AMDARIS for a QA Specialist.
@@ -41,3 +43,28 @@ User applied successfully for the position.
 Actual result:
 An error message in red shows up below. It says "An error message in red shows up below"
 The user was unable to apply for this position.
+
+We have a BUG!
+
+Test 3
+Today i will make a test for LinkdIn and more specific, creating a post.
+Here is what i`m going to do: I will login with correct credentials write a post and add # tags and click on a post button.
+
+1. Open URL https://www.linkedin.com
+2. Enter Correct Email or phone number
+3. Enter a correct password
+4. Click on Agree & Join button
+5.User is successfully logged in and redirected to main dashboard.
+6. Click on a start a post field.
+7. Pop up window shows up.
+8. Start to type whatewer you thing about (in my case : Today we tested LinkdIN.....)
+9. Click on the blue sign "ADD hashtag" and add as many as you think about
+10. Click on the button "Post"
+
+Expected result:
+User successfully submitted a post, notification should be appear in the left bottom of your screen "Post successful. View Post"
+
+Actual result:
+Post is submitted and appear on the user screen
+
+No BUGs today guys, sorry :)
