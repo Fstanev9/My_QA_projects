@@ -68,3 +68,33 @@ Actual result:
 Post is submitted and appear on the user screen
 
 No BUGs today guys, sorry :)
+
+Test 4
+We have a focus on "Tutorials.bg" website today. And more specifically make a registration with correct email (never uset on this website) 
+and username (never uset on this website again) for password the form require 6 simbols
+we are going to use 6 blanck spaces (six times presing the space on the keyboard) and click on "регистриай ме" button.
+
+1. Open URL https://tutorials.bg
+2. Click on "Регистрация" button, located on a top page right side next to the green button "Абонирай се"
+3. User is redirected to the next page with the registration form.
+4. Enter a correct имейл. Never used before on this website
+5. Enter a correct потребител. Never used before on this website
+6. For парола as we said we going to use six spaces.
+7. For повтори парола we going to use the same as the password.
+8. Click on "регистриай ме" button.
+
+Expected result:
+Еrror message indicating that the password is invalid
+Тhe user remains on the same page.
+
+Actual result:
+Тhe user remains on the same page. 
+Registration cannot be done
+
+P.S.
+I tested few more times with correct credentials and the result is the same.
+Registration cannot be completed.
+
+Today we have some different result :) 
+
+
