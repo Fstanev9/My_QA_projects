@@ -121,4 +121,9 @@ Below all mandatory fields where the user has to write something should appear r
 Actual result:
 We have some field marcked as mandatory and there is no red warning sign below
 
+P.S.
+I just saw somethin else.
+on the very end of the page, there is a check box "Съгласен съм сПолитика за поверителност и защита на личните данни" 
+which is not marcked as a mandatory with "*" , but it sill require to be clicked to proceed. Soo this is a bonus today :)
+
 So there it goes, another BUG we found :)
