@@ -97,4 +97,28 @@ Registration cannot be completed.
 
 Today we have some different result :) 
 
+Test 5
+Today i found something really interesting. I found a BUG in the website on one of the mobile operators in Bulgaria.I'm speaking about Vivacom.
 
+Here is what we are going to do today. WE are going to go on provider website,we are going to choose one subscription plan he provides
+( for example "Unlimited 150" ),than we are going to try to order it.
+
+1. Open URL https://www.vivacom.bg/bg
+2. Click on the icon In the middle under which it says "Мобилни услуги"
+3. you will be redirected to the next page ith the correct content.
+4. We will choose the first plan, so click on the "КУПИ" button on your right side of your screen
+5. We have to click on the check box "* Общи условия за мобилни услуги" because we cannot proceed.
+6. Next step is to click on the "Продължи като гост" button.
+7. User is redirected to page where he has to fill in all mandatory fields which are marcked with "*"
+8. On this step we are not going to fill the form with correct information, instead we are going to scroll to the very end of the page
+and going to click on "Напред" button.
+
+That`s how we are going to test the validation of all mandatory fields.
+
+Expected result:
+Below all mandatory fields where the user has to write something should appear red warning sign.
+
+Actual result:
+We have some field marcked as mandatory and there is no red warning sign below
+
+So there it goes, another BUG we found :)
