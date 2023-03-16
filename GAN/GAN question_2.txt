@@ -1,0 +1,89 @@
+Feature: Registration
+  As a user
+  I want to register for an account on the https://moneygaming.qa.gameaccount.com
+  So that I can access the features
+
+1  Scenario: Valid Password
+    Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+    When I enter a valid email address
+    And I enter a valid password with at least 6 characters, at least one number, and at least one special character
+    And I click the register button
+    Then I should see a success message that my account has been created
+
+2  Scenario: Password less than 6 characters long
+    Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+    When I enter a valid email address
+    And I enter a password that is less than 6 characters long
+    And I click the register button
+    Then I should see an error message that my password should be at least 6 characters long
+
+3  Scenario: Password does not contain a number
+    Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+    When I enter a valid email address
+    And I enter a password without a number
+    And I click the register button
+    Then I should see an error message that my password should contain at least one number
+	
+3.1 Scenario: Password does not contain a number validation field
+     Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+     When I enter a password without a number
+     Then I should see an error message that my password should contain at least one number
+	
+3.2 Scenario: Password does not contain a number by pressing JoinNow button
+     Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+     And the Choose Password field contains text without a number
+	 When I press JoinNow button
+     Then I should see an error message that my password should contain at least one number
+	 And registration should not be performed
+
+4  Scenario: Password does not contain a special character
+    Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+    When I enter a valid email address
+    And I enter a password without a special character
+    And I click the register button
+    Then I should see an error message that my password should contain at least one special character
+	
+4.1 Scenario: Password does not contain a special character validation field
+     Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+     When I enter a password without a special character
+     Then I should see an error message that my password should contain special character
+	
+4.2 Scenario: Password does not contain special character by pressing JoinNow button
+     Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+     And the Choose Password field contains text without special character
+	 When I press JoinNow button
+     Then I should see an error message that my password should contain special character
+	 And registration should not be performed	
+
+5  Scenario: Password contains only letters
+    Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+    When I enter a valid email address
+    And I enter a password with only letters
+    And I click the register button
+    Then I should see an error message that my password should contain at least one number and one special character
+	And registration should not be performed
+
+6  Scenario: Password contains only numbers
+    Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+    When I enter a valid email address
+    And I enter a password with only numbers
+    And I click the register button
+    Then I should see an error message that my password should contain at least one letter and one special character
+	And registration should not be performed
+
+7  Scenario: Password contains only special characters
+    Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+    When I enter a valid email address
+    And I enter a password with only special characters
+    And I click the register button
+    Then I should see an error message that my password should contain at least one letter and one number
+	And registration should not be performed
+	
+8  Scenario: Password empty field
+    Given The User is on the reg page https://moneygaming.qa.gameaccount.com
+    When I enter a valid email address
+    And I leave the field empty
+    And I click to another field or press Join now button
+    Then I should see an error message that my password should contain at least one letter and one number
+	And registration should not be performed
+
